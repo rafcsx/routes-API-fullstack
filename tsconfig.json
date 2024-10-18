@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "esnext",
+      "strict": true,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "verbatimModuleSyntax": true // Adicione esta linha
+    },
+    "include": [
+      "src/**/*.ts",
+      "src/**/*.svelte"
+    ]
+  }
+  

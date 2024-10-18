@@ -1,0 +1,16 @@
+[build]
+  publish = "public"                    # O diretório onde os arquivos estáticos estão localizados
+  command = "npm run build"             # Comando para construir seu projeto
+
+[dev]
+  command = "npm run dev"               # Comando para iniciar o servidor de desenvolvimento
+  port = 3000                            # Porta a ser usada no desenvolvimento
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true
+
+[functions]
+  directory = "netlify/functions"
