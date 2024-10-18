@@ -55,41 +55,4 @@ node server.js
 1. Para iniciar o ambiente de desenvolvimento com Vite, execute:
 npm run dev
 
-1. O ambiente de desenvolvimento estará disponível na porta especificada pelo Vite (geralmente 5000). Acesse o localhost:5000 e suas rotas para verificar localhost:5000/login.
-
-## Estrutura do Projeto 📂
-
-C:\Users\API-routes-blip\
-│
-├── .netlify\
-│   └── functions\
-│       └── myFunction.js
-├── node_modules\
-├── public\
-│   ├── build\
-│   ├── favicon.png
-│   ├── global.css
-│   └── index.html
-├── scripts\
-├── src\
-│   ├── components\
-│   ├── App.svelte
-│   ├── auth.js
-│   ├── firebase.js
-│   ├── global.css
-│   ├── main.js
-│   └── setupProxy.js
-├── .env
-├── .gitignore
-├── index.js
-├── netlify.toml
-├── package-lock.json
-├── package.json
-├── README.md
-├── rollup.config.js
-├── server.js
-├── tailwind.config.js
-├── tsconfig.json
-├── vite.config.js
-└── yarn.lock
-
+2. O ambiente de desenvolvimento estará disponível na porta especificada pelo Vite (geralmente 5000). Acesse o localhost:5000 e suas rotas para verificar localhost:5000/login.
