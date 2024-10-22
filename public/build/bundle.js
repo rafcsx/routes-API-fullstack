@@ -19503,7 +19503,7 @@ var app = (function () {
 	const { Object: Object_1, console: console_1$3 } = globals;
 	const file$3 = "src/components/routes/Login.svelte";
 
-	// (89:8) {#if errorMessage}
+	// (96:8) {#if errorMessage}
 	function create_if_block$1(ctx) {
 		let p;
 		let t;
@@ -19513,7 +19513,7 @@ var app = (function () {
 				p = element("p");
 				t = text(/*errorMessage*/ ctx[1]);
 				attr_dev(p, "class", "text-red-400");
-				add_location(p, file$3, 101, 12, 3012);
+				add_location(p, file$3, 107, 12, 3375);
 			},
 			m: function mount(target, anchor) {
 				insert_dev(target, p, anchor);
@@ -19533,7 +19533,7 @@ var app = (function () {
 			block,
 			id: create_if_block$1.name,
 			type: "if",
-			source: "(89:8) {#if errorMessage}",
+			source: "(96:8) {#if errorMessage}",
 			ctx
 		});
 
@@ -19649,18 +19649,18 @@ var app = (function () {
 				div2 = element("div");
 				h30 = element("h3");
 				i0 = element("i");
-				t11 = text(" Sobre o Sistema");
+				t11 = text("Sobre o Sistema");
 				t12 = space();
 				p0 = element("p");
-				p0.textContent = "O sistema valida uma chave de API e carrega um banco de dados de\n                mensagens, simulando endpoints para tratativa com logs,\n                mensagens recebidas e enviadas.";
+				p0.textContent = "O sistema valida uma chave de API e carrega um banco de dados de mensagens, simulando endpoints para tratativa com logs, mensagens recebidas e enviadas.";
 				t14 = space();
 				div3 = element("div");
 				h31 = element("h3");
 				i1 = element("i");
-				t15 = text(" Ajuda");
+				t15 = text("Ajuda");
 				t16 = space();
 				p1 = element("p");
-				p1.textContent = "Para registrar uma nova chave de API, siga as instruções do\n                sistema. Após registrar, você poderá validar suas mensagens.";
+				p1.textContent = "Para registrar uma nova chave de API, siga as instruções do sistema. Após registrar, você poderá validar suas mensagens.";
 				t18 = space();
 				p2 = element("p");
 				strong0 = element("strong");
@@ -19670,13 +19670,13 @@ var app = (function () {
 				div4 = element("div");
 				h32 = element("h3");
 				i2 = element("i");
-				t22 = text(" Servidor Simulado");
+				t22 = text("Servidor Simulado");
 				t23 = space();
 				p3 = element("p");
 				t24 = text("Inicie o servidor com o comando ");
 				code0 = element("code");
 				code0.textContent = "npm run dev";
-				t26 = text(" para o\n                front e ");
+				t26 = text(" para o front e ");
 				code1 = element("code");
 				code1.textContent = "node server.js";
 				t28 = text(" para o backend.");
@@ -19713,80 +19713,80 @@ var app = (function () {
 				link0 = element("link");
 				t48 = space();
 				link1 = element("link");
-				attr_dev(h20, "class", "text-2xl mb-4 text-pixelated svelte-1it336d");
-				add_location(h20, file$3, 99, 8, 2921);
+				attr_dev(h20, "class", "text-2xl mb-4");
+				add_location(h20, file$3, 105, 8, 3299);
 				attr_dev(input0, "type", "text");
 				attr_dev(input0, "placeholder", "Insira sua chave de API");
 				input0.required = true;
-				attr_dev(input0, "class", "w-full p-2 mb-4 border-2 border-gray-600 bg-gray-700 text-gray-100 pixelated svelte-1it336d");
-				add_location(input0, file$3, 104, 12, 3121);
+				attr_dev(input0, "class", "w-full p-2 mb-4 border-2 border-gray-600 bg-gray-700 text-gray-100");
+				add_location(input0, file$3, 110, 12, 3484);
 				attr_dev(button0, "type", "submit");
-				attr_dev(button0, "class", "w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600 pixelated svelte-1it336d");
-				add_location(button0, file$3, 111, 12, 3399);
-				add_location(form0, file$3, 103, 8, 3077);
-				attr_dev(div0, "class", "max-w-md w-full p-8 bg-gray-800 bordered text-center pixelated svelte-1it336d");
-				add_location(div0, file$3, 98, 4, 2836);
-				attr_dev(h21, "class", "text-2xl mb-4 text-pixelated svelte-1it336d");
-				add_location(h21, file$3, 124, 8, 3766);
+				attr_dev(button0, "class", "w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600");
+				add_location(button0, file$3, 117, 12, 3752);
+				add_location(form0, file$3, 109, 8, 3440);
+				attr_dev(div0, "class", "max-w-md w-full p-8 bg-gray-800 border-2 border-gray-600 rounded-lg text-center");
+				add_location(div0, file$3, 104, 4, 3197);
+				attr_dev(h21, "class", "text-2xl mb-4");
+				add_location(h21, file$3, 128, 8, 4113);
 				attr_dev(input1, "type", "text");
 				attr_dev(input1, "placeholder", "Insira a nova chave de API");
 				input1.required = true;
-				attr_dev(input1, "class", "w-full p-2 mb-4 border-2 border-gray-600 bg-gray-700 text-gray-100 pixelated svelte-1it336d");
-				add_location(input1, file$3, 126, 12, 3889);
+				attr_dev(input1, "class", "w-full p-2 mb-4 border-2 border-gray-600 bg-gray-700 text-gray-100");
+				add_location(input1, file$3, 130, 12, 4221);
 				attr_dev(button1, "type", "submit");
-				attr_dev(button1, "class", "w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600 pixelated svelte-1it336d");
-				add_location(button1, file$3, 133, 12, 4173);
-				add_location(form1, file$3, 125, 8, 3843);
-				attr_dev(div1, "class", "max-w-md w-full p-8 bg-gray-800 bordered text-center pixelated mt-6 svelte-1it336d");
-				add_location(div1, file$3, 121, 4, 3663);
-				attr_dev(i0, "class", "fas fa-info-circle");
-				add_location(i0, file$3, 148, 16, 4663);
-				attr_dev(h30, "class", "text-lg mb-2 text-pixelated svelte-1it336d");
-				add_location(h30, file$3, 147, 12, 4606);
-				add_location(p0, file$3, 150, 12, 4744);
-				attr_dev(div2, "class", "panel bordered p-4 w-full max-w-md mb-4 text-center pixelated svelte-1it336d");
-				add_location(div2, file$3, 144, 8, 4497);
-				attr_dev(i1, "class", "fas fa-question-circle");
-				add_location(i1, file$3, 160, 16, 5155);
-				attr_dev(h31, "class", "text-lg mb-2 text-pixelated svelte-1it336d");
-				add_location(h31, file$3, 159, 12, 5098);
-				add_location(p1, file$3, 162, 12, 5230);
-				add_location(strong0, file$3, 167, 16, 5465);
+				attr_dev(button1, "class", "w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600");
+				add_location(button1, file$3, 137, 12, 4495);
+				add_location(form1, file$3, 129, 8, 4175);
+				attr_dev(div1, "class", "max-w-md w-full p-8 bg-gray-800 border-2 border-gray-600 rounded-lg text-center mt-6");
+				add_location(div1, file$3, 127, 4, 4006);
+				attr_dev(i0, "class", "fas fa-info-circle mr-2");
+				add_location(i0, file$3, 150, 16, 4968);
+				attr_dev(h30, "class", "text-lg mb-2");
+				add_location(h30, file$3, 149, 12, 4926);
+				add_location(p0, file$3, 152, 12, 5053);
+				attr_dev(div2, "class", "bg-gray-800 border-2 border-gray-600 rounded-lg p-4 w-full max-w-md mb-4 text-center");
+				add_location(div2, file$3, 148, 8, 4815);
+				attr_dev(i1, "class", "fas fa-question-circle mr-2");
+				add_location(i1, file$3, 158, 16, 5419);
+				attr_dev(h31, "class", "text-lg mb-2");
+				add_location(h31, file$3, 157, 12, 5377);
+				add_location(p1, file$3, 160, 12, 5498);
+				add_location(strong0, file$3, 164, 16, 5717);
 				attr_dev(p2, "class", "text-yellow-400 mt-2");
-				add_location(p2, file$3, 166, 12, 5416);
-				attr_dev(div3, "class", "panel bordered p-4 w-full max-w-md mb-4 text-center pixelated svelte-1it336d");
-				add_location(div3, file$3, 156, 8, 4989);
-				attr_dev(i2, "class", "fas fa-server");
-				add_location(i2, file$3, 174, 16, 5769);
-				attr_dev(h32, "class", "text-lg mb-2 text-pixelated svelte-1it336d");
-				add_location(h32, file$3, 173, 12, 5712);
-				add_location(code0, file$3, 177, 48, 5899);
-				add_location(code1, file$3, 178, 24, 5955);
-				add_location(p3, file$3, 176, 12, 5847);
-				add_location(strong1, file$3, 180, 15, 6031);
-				add_location(p4, file$3, 180, 12, 6028);
-				add_location(li0, file$3, 182, 16, 6137);
-				add_location(code2, file$3, 183, 48, 6215);
-				add_location(li1, file$3, 183, 16, 6183);
-				add_location(code3, file$3, 185, 42, 6309);
-				add_location(li2, file$3, 184, 16, 6262);
-				add_location(code4, file$3, 188, 28, 6424);
-				add_location(li3, file$3, 187, 16, 6391);
-				add_location(li4, file$3, 190, 16, 6523);
+				add_location(p2, file$3, 163, 12, 5668);
+				attr_dev(div3, "class", "bg-gray-800 border-2 border-gray-600 rounded-lg p-4 w-full max-w-md mb-4 text-center");
+				add_location(div3, file$3, 156, 8, 5266);
+				attr_dev(i2, "class", "fas fa-server mr-2");
+				add_location(i2, file$3, 169, 16, 6008);
+				attr_dev(h32, "class", "text-lg mb-2");
+				add_location(h32, file$3, 168, 12, 5966);
+				add_location(code0, file$3, 172, 48, 6142);
+				add_location(code1, file$3, 172, 88, 6182);
+				add_location(p3, file$3, 171, 12, 6090);
+				add_location(strong1, file$3, 174, 15, 6258);
+				add_location(p4, file$3, 174, 12, 6255);
+				add_location(li0, file$3, 176, 16, 6364);
+				add_location(code2, file$3, 177, 48, 6442);
+				add_location(li1, file$3, 177, 16, 6410);
+				add_location(code3, file$3, 178, 42, 6515);
+				add_location(li2, file$3, 178, 16, 6489);
+				add_location(code4, file$3, 179, 28, 6592);
+				add_location(li3, file$3, 179, 16, 6580);
+				add_location(li4, file$3, 180, 16, 6674);
 				attr_dev(ol, "class", "list-decimal pl-6");
-				add_location(ol, file$3, 181, 12, 6090);
-				attr_dev(div4, "class", "panel bordered p-4 w-full max-w-md mb-4 text-center pixelated svelte-1it336d");
-				add_location(div4, file$3, 170, 8, 5603);
+				add_location(ol, file$3, 175, 12, 6317);
+				attr_dev(div4, "class", "bg-gray-800 border-2 border-gray-600 rounded-lg p-4 w-full max-w-md mb-4 text-center");
+				add_location(div4, file$3, 167, 8, 5855);
 				attr_dev(div5, "class", "mt-6 flex flex-col items-center w-full px-4");
-				add_location(div5, file$3, 143, 4, 4431);
+				add_location(div5, file$3, 147, 7, 4749);
 				attr_dev(div6, "class", "flex flex-col items-center justify-center min-h-screen text-gray-100");
-				add_location(div6, file$3, 95, 0, 2744);
+				add_location(div6, file$3, 103, 0, 3110);
 				attr_dev(link0, "href", "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css");
 				attr_dev(link0, "rel", "stylesheet");
-				add_location(link0, file$3, 197, 0, 6696);
+				add_location(link0, file$3, 186, 0, 6790);
 				attr_dev(link1, "href", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 				attr_dev(link1, "rel", "stylesheet");
-				add_location(link1, file$3, 201, 0, 6807);
+				add_location(link1, file$3, 187, 0, 6893);
 			},
 			l: function claim(nodes) {
 				throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -19953,15 +19953,20 @@ var app = (function () {
 
 		const app = initializeApp(firebaseConfig);
 		const db = getDatabase(app);
+
+		// Variáveis de estado
 		let apiKey = "";
+
 		let errorMessage = "";
 		let registeredApiKeys = [];
 		let newApiKey = "";
 
+		// Monta o componente e verifica chaves registradas
 		onMount(() => {
 			checkRegisteredApiKeys();
 		});
 
+		// Verifica chaves de API registradas no Firebase
 		function checkRegisteredApiKeys() {
 			const apiKeysRef = ref(db, "apiKeys/");
 
@@ -19976,6 +19981,7 @@ var app = (function () {
 			});
 		}
 
+		// Autentica o usuário com a chave de API
 		function authenticate() {
 			if (registeredApiKeys.includes(apiKey)) {
 				localStorage.setItem("apiKey", apiKey);
@@ -19985,34 +19991,41 @@ var app = (function () {
 			}
 		}
 
+		// Manipula o envio do formulário de login
 		function handleSubmit(event) {
 			event.preventDefault();
 			authenticate();
 		}
 
+		// Manipula o envio do formulário de registro
 		function handleRegister(event) {
 			event.preventDefault();
 
 			if (isValidApiKey(newApiKey)) {
-				// Verifique se a chave já está registrada
+				// Verifica se a chave já está registrada
 				if (registeredApiKeys.includes(newApiKey)) {
 					alert("Essa chave de API já está registrada.");
 					return;
 				}
 
-				const apiKeyRef = ref(db, "apiKeys/" + newApiKey);
-
-				set(apiKeyRef, { key: newApiKey }).then(() => {
-					alert("Chave de API registrada com sucesso!");
-					$$invalidate(2, newApiKey = ""); // Limpa o campo após o registro
-					checkRegisteredApiKeys(); // Atualiza a lista de chaves registradas
-				}).catch(error => {
-					console.error("Erro ao registrar chave de API:", error);
-					alert("Erro ao registrar chave de API. Tente novamente.");
-				});
+				registerApiKey(newApiKey); // Chama função para registrar a chave
 			} else {
 				alert("Chave de API inválida. O formato deve ser: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
 			}
+		}
+
+		// Registra a nova chave de API no Firebase
+		function registerApiKey(apiKey) {
+			const apiKeyRef = ref(db, "apiKeys/" + apiKey);
+
+			set(apiKeyRef, { key: apiKey }).then(() => {
+				alert("Chave de API registrada com sucesso!");
+				$$invalidate(2, newApiKey = ""); // Limpa o campo após o registro
+				checkRegisteredApiKeys(); // Atualiza a lista de chaves registradas
+			}).catch(error => {
+				console.error("Erro ao registrar chave de API:", error);
+				alert("Erro ao registrar chave de API. Tente novamente.");
+			});
 		}
 
 		const writable_props = [];
@@ -20039,7 +20052,6 @@ var app = (function () {
 			ref,
 			set,
 			get,
-			child,
 			firebaseConfig,
 			app,
 			db,
@@ -20051,6 +20063,7 @@ var app = (function () {
 			authenticate,
 			handleSubmit,
 			handleRegister,
+			registerApiKey,
 			isValidApiKey
 		});
 
