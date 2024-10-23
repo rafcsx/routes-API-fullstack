@@ -103,7 +103,9 @@
 
 <div class="flex flex-col items-center justify-center min-h-screen text-gray-100">
     <div class="max-w-md w-full p-8 bg-gray-800 border-2 border-gray-600 rounded-lg text-center">
-        <h2 class="text-2xl mb-4">Login</h2>
+        <h2 class="text-2xl mb-4">
+            <i class="fas fa-lock mr-2"></i>Login
+        </h2>
         {#if errorMessage}
             <p class="text-red-400">{errorMessage}</p>
         {/if}
@@ -119,14 +121,16 @@
                 type="submit"
                 class="w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600"
             >
-                Entrar
+                <i class="fas fa-sign-in-alt mr-2"></i>Entrar
             </button>
         </form>
     </div>
 
     <!-- Painel de Registro da Chave API -->
     <div class="max-w-md w-full p-8 bg-gray-800 border-2 border-gray-600 rounded-lg text-center mt-6">
-        <h2 class="text-2xl mb-4">Registrar Chave de API</h2>
+        <h2 class="text-2xl mb-4">
+            <i class="fas fa-pencil-alt mr-2"></i>Registrar Chave de API
+        </h2>
         <form on:submit={handleRegister}>
             <input
                 type="text"
@@ -139,13 +143,13 @@
                 type="submit"
                 class="w-full py-2 bg-gray-700 text-gray-100 hover:bg-gray-600"
             >
-                Registrar
+                <i class="fas fa-plus-circle mr-2"></i>Registrar
             </button>
         </form>
     </div>
 
-       <!-- Painéis de informações -->
-       <div class="mt-6 flex flex-col items-center w-full px-4">
+    <!-- Painéis de informações -->
+    <div class="mt-6 flex flex-col items-center w-full px-4">
         <div class="bg-gray-800 border-2 border-gray-600 rounded-lg p-4 w-full max-w-md mb-4 text-center">
             <h3 class="text-lg mb-2">
                 <i class="fas fa-info-circle mr-2"></i>Sobre o Sistema
@@ -199,26 +203,4 @@
         padding: 0;
     }
 
-    .pixelated {
-        image-rendering: pixelated;
-    }
-
-    .text-pixelated {
-        font-family: "Source Code Pro", monospace;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    .bordered {
-        border: 2px solid #444;
-        border-radius: 8px;
-    }
-
-    .panel {
-        background-color: #222;
-        border: 1px solid #444;
-        border-radius: 8px;
-        padding: 16px;
-        margin: 8px 0;
-    }
 </style>

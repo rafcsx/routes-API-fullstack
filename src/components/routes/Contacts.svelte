@@ -15,6 +15,7 @@
 
     let errorMessage: string = '';
 
+    // Funções
     async function fetchContacts() {
         try {
             console.log('Fetching contacts...');
@@ -29,13 +30,7 @@
             });
 
             if (!response.ok) {
-                if (response.status === 401) {
-                    errorMessage = 'Unauthorized access. Please log in again.';
-                } else if (response.status === 404) {
-                    errorMessage = 'Contacts not found.';
-                } else {
-                    errorMessage = 'Error fetching contacts. Please try again later.';
-                }
+                handleFetchError(response);
                 throw new Error('Failed to fetch contacts');
             }
 
@@ -50,6 +45,16 @@
             setTimeout(() => {
                 navigate('/login');
             }, 3000);
+        }
+    }
+
+    function handleFetchError(response: Response) {
+        if (response.status === 401) {
+            errorMessage = 'Unauthorized access. Please log in again.';
+        } else if (response.status === 404) {
+            errorMessage = 'Contacts not found.';
+        } else {
+            errorMessage = 'Error fetching contacts. Please try again later.';
         }
     }
 
@@ -69,6 +74,7 @@
         currentPage = page;
     }
 
+    // Lifecycle
     onMount(() => {
         if (!apiKey) {
             navigate('/login');
@@ -78,21 +84,21 @@
     });
 </script>
 
-<div class="container">
-    <h1 class="title">Lista de Contatos</h1>
+<div class="max-w-lg mx-auto my-12 p-6 bg-white rounded-lg shadow-lg text-center">
+    <h1 class="text-2xl font-semibold mb-4">Lista de Contatos</h1>
     {#if errorMessage}
-        <p class="error">{errorMessage}</p>
+        <p class="text-red-500">{errorMessage}</p>
     {/if}
     {#if contacts.length === 0}
         <p>Nenhum contato encontrado.</p>
     {:else}
-        <ul class="contact-list">
+        <ul class="list-none p-0 m-0">
             {#each currentContacts() as contact}
                 <li>
                     <button 
                         on:click={() => goToConversation(contact.id)} 
                         type="button" 
-                        class="contact-button"
+                        class="flex items-center justify-center px-4 py-2 my-2 bg-gray-200 rounded hover:bg-gray-300 transition-colors duration-300"
                     >
                         <i class="fas fa-user"></i> {contact.name}
                     </button>
@@ -100,12 +106,12 @@
             {/each}
         </ul>
 
-        <div class="pagination">
+        <div class="mt-4">
             {#each Array(Math.ceil(totalContacts / contactsPerPage)) as _, index}
                 <button 
                     on:click={() => changePage(index + 1)} 
                     disabled={currentPage === index + 1}
-                    class="page-button {currentPage === index + 1 ? 'disabled' : ''}"
+                    class="px-2 py-1 mx-1 rounded bg-blue-500 text-white hover:bg-blue-600 disabled:bg-gray-300 transition-colors duration-300"
                 >
                     {index + 1}
                 </button>
@@ -113,67 +119,3 @@
         </div>
     {/if}
 </div>
-
-<style>
-    .container {
-        max-width: 600px;
-        margin: 50px auto;
-        padding: 20px;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-    }
-
-    .title {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #333;
-    }
-
-    .error {
-        color: red;
-    }
-
-    .contact-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .contact-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        margin: 5px 0;
-        background-color: #f0f0f0;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-    }
-
-    .contact-button:hover {
-        background-color: #e0e0e0;
-    }
-
-    .pagination {
-        margin-top: 20px;
-    }
-
-    .page-button {
-        padding: 5px 10px;
-        margin: 0 2px;
-        cursor: pointer;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: white;
-    }
-
-    .page-button.disabled {
-        background-color: #cccccc;
-        cursor: not-allowed;
-    }
-</style>

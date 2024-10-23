@@ -1,0 +1,9 @@
+/* Adicione isso ao seu arquivo global.css ou estilo correspondente */
+.border-b {
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
