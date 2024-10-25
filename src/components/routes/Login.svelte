@@ -15,6 +15,7 @@
         appId: "1:494627128433:web:99099a19db8eee632687d0",
     };
 
+   
     const app = initializeApp(firebaseConfig);
     const db = getDatabase(app);
 
@@ -67,13 +68,12 @@
     function handleRegister(event: Event) {
         event.preventDefault();
         if (isValidApiKey(newApiKey)) {
-            // Verifica se a chave já está registrada
             if (registeredApiKeys.includes(newApiKey)) {
                 alert("Essa chave de API já está registrada.");
                 return;
             }
 
-            registerApiKey(newApiKey); // Chama função para registrar a chave
+            registerApiKey(newApiKey);
         } else {
             alert("Chave de API inválida. O formato deve ser: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX");
         }
@@ -200,7 +200,5 @@
         background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
         color: #ccc;
         margin: 0;
-        padding: 0;
     }
-
 </style>
